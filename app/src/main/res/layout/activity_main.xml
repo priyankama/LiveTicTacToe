@@ -4,15 +4,163 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="3pt"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginRight="3pt"
+            android:onClick="btnclicked"
+            android:textColor="#ffffff"
+            android:textSize="36sp"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginRight="3pt"
+            android:onClick="btnclicked"
+            android:textColor="#ffffff"
+            android:textSize="36sp"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginRight="3pt"
+            android:onClick="btnclicked"
+            android:textColor="#ffffff"
+            android:textSize="36sp"
+            tools:ignore="OnClick" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="3pt"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginRight="3pt"
+            android:onClick="btnclicked"
+            android:textColor="#ffffff"
+            android:textSize="36sp"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginRight="3pt"
+            android:onClick="btnclicked"
+            android:textColor="#ffffff"
+            android:textSize="36sp"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginRight="3pt"
+            android:onClick="btnclicked"
+            android:textColor="#ffffff"
+            android:textSize="36sp"
+            tools:ignore="OnClick" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginRight="3pt"
+            android:onClick="btnclicked"
+            android:textColor="#ffffff"
+            android:textSize="36sp"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginRight="3pt"
+            android:onClick="btnclicked"
+            android:textColor="#ffffff"
+            android:textSize="36sp"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginRight="3pt"
+            android:onClick="btnclicked"
+            android:textColor="#ffffff"
+            android:textSize="36sp"
+            tools:ignore="OnClick" />
+    </TableRow>
+
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/etReqEmail"
+        android:layout_width="194dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Enter friend's email:"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btnAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/holo_orange_light"
+        android:onClick="btnAcceptCLicked"
+        android:text="Accept"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnRequest"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btnRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAccent"
+        android:onClick="btnRequestClicked"
+        android:text="Request"
+        app:layout_constraintStart_toEndOf="@+id/etReqEmail"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="OnClick" />
 </android.support.constraint.ConstraintLayout>

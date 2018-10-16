@@ -41,7 +41,7 @@ class LoginActivity : AppCompatActivity() {
                 }
         var currentUser = mAuth!!.currentUser
         if(currentUser!=null){
-            myRef.child("GameUsers").child(splitString(currentUser.email.toString())).setValue(currentUser.uid)
+            myRef.child("GameUsers").child(splitString(currentUser.email.toString())).child("Response").push().setValue(currentUser.uid)
 
         }
     }
@@ -63,4 +63,5 @@ class LoginActivity : AppCompatActivity() {
         var split = email.split("@")
         return split[0]
     }
+
 }
